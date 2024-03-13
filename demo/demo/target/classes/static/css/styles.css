@@ -1,0 +1,39 @@
+/* CSS for info icon */
+.info-icon {
+  font-size: 16px; /* Artırılan boyut */
+  margin-left: 8px; /* Biraz daha geniş alan */
+  cursor: pointer;
+  display: inline-block;
+  width: 20px; /* Dairenin boyutu */
+  height: 20px; /* Dairenin boyutu */
+  text-align: center;
+  line-height: 20px; /* Dairenin boyutu */
+  border-radius: 50%; /* Daire şeklinde */
+  background-color: #007bff; /* Arka plan rengi */
+  color: #fff; /* Yazı rengi */
+}
+
+.info-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.info-tooltip .tooltip-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px; /* Biraz daha büyük içerik alanı */
+  z-index: 1;
+  width: 250px; /* Biraz daha geniş bir alan */
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px; /* Yazı boyutu artırıldı */
+  line-height: 1.5; /* Satır yüksekliği artırıldı */
+}
+
+.info-tooltip:hover .tooltip-content {
+  display: block;
+}
